@@ -11,8 +11,11 @@ const Banner = () => {
                 <Typography variant="h2" component="h1">
                     Movie Title
                 </Typography>
-                <Button>Play</Button>
-                <Button>My List</Button>
+                <div className={classes.buttons}>
+                    <Button>Play</Button>
+                    <Button>My List</Button>
+                </div>
+                
             </div>
         </div>
     )
@@ -28,6 +31,17 @@ const useStyles = makeStyles((theme) => ({
         backgroundPosition: "center",
         color: "#FFF",
     },
+    buttons: {
+        "& button": {
+            cursor: "pointer",
+            color: "#FFF",
+            fontWeight: 700,
+            borderRadius: "5px",
+            padding: theme.spacing(1, 4, 1, 4),
+            marginRight: "1rem",
+            backgroundColor: "rgba(51,51,51, 0.5)",
+        }
+    }
   }));
 
 export default Banner
