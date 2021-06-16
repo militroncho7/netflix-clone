@@ -8,12 +8,19 @@ export const NetflixInput = styled(InputBase)`
     height: 30px;
     border-radius: 5px;
     border: none;
-
 `
+
+const handleWidth = wide => {
+    switch(wide){
+        case "fullwidth": return "100%";
+        case "medium" : return "260px";
+        default: return "160px"
+    }
+};
 
 export const NetflixButton = styled.button`
     z-index: 15;
-    background-color: #e50914;
+    background-color: ${({color}) => color === "gray" ? "lightgray" : "#e50914"};
     color: #FFF;
     border-radius: 5px;
     text-transform: inherit;
@@ -22,4 +29,5 @@ export const NetflixButton = styled.button`
     border: none;
     outline: none;
     cursor: pointer;
+    width: ${({wide}) => handleWidth(wide)}
 `
