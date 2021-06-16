@@ -20,3 +20,9 @@
 - Este eventListener está activo una sola vez cada vez que refrescamos la página -> (useEffect con dependecia vacía).
 - Una vez montado el componente hay que limpiarlo para que no se quede colgado el eventListener.
 - Añadir rutas/enlaces al Logo y al Avatar.
+
+### Banner
+- Importamos imagen como backgroundImage. Hemos acompañado esta imagen con estilos como object-fit, brackgorund-size y background-position para ajustar tal y como queremos.
+- Hemos posiconado el título de la película, la descripción y los botones.
+- Como la descripción viene de la API, la truncamos para asegurarnos que no sea demasiado larga. Para ello hemos declarado la función truncate().
+- Por último, añadimos un <div> vacío que oscurece la imagen haciendo un efecto de fusión con el resto de la app (gradiente posicionado de manera relativa).
