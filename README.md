@@ -1,6 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Inicialización del proyecto
+` npx create-react-app netflix --template redux`
 
-## Available Scripts
+### Proceso de Limpieza e instalación de dependencias
+- material-ui/core
+- axios
+- firebase
+- react-router-dom
+- uuid
+- styled-components
+
+## App.js - Layout inicial
 
 In the project directory, you can run:
 
