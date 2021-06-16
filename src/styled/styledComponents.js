@@ -22,7 +22,7 @@ export const NetflixButton = styled.button`
     z-index: 15;
     background-color: ${({color}) => color === "gray" ? "lightgray" : "#e50914"};
     color: #FFF;
-    border-radius: 5px;
+    border-radius: ${({radius}) => radius ? "5px" : null};
     text-transform: inherit;
     padding: 15px;
     font-size: 1.1rem;

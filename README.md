@@ -37,5 +37,7 @@
 - Input personalizado en styled-components (NetflixInput). Como viene de InputBase (que ya es un componente de material UI) hemos editado los parámetros que queríamos cambiar.
 
 ### Profile Page
-- Distribución de la página
-- pasar props a los styled-components
+- Distribución de la página.
+- pasar props a los styled-components.
+- En el caso que el componente no sea binario (diferente tamaño de botones) lo solucionamos con una función y un switch.
+
