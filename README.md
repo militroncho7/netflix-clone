@@ -34,3 +34,4 @@
 - Colocamos una imagen como background.
 - Creamos un botón con styled-components para iniciar sesión. Lo hemos customizado a nuestro gusto (color, borde, etc...) y lo podemos cambiar como queramos pasándole props.
 - Styled-components para variar los estilos del input o del botón pero para su posicionamiento le damos una clase normal.
+- Input personalizado en styled-components (NetflixInput). Como viene de InputBase (que ya es un componente de material UI) hemos editado los parámetros que queríamos cambiar.
