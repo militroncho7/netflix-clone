@@ -7,7 +7,7 @@ import Paypal from './Pages/Paypal';
 import Home from './Pages/Home';
 
 function App() {
-  const user = "Pepe";
+  const user = null;
   const classes = useStyles();
 
   return (

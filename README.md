@@ -13,6 +13,8 @@
 
 - Estilos en los componentes de Pages: Patrón para añadir la infraesctructura de todos los componentes página: Banner, Header, Plans y Rows.
 
+## Componentes
+
 ### Header
 - Importamos el logo
 - Añadimos al AppBar clase condicional transparente. Se activa si la variable show es true. Esta variable se enciverte en true cuando hacemos un scroll vertical de 50px.
