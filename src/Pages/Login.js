@@ -24,7 +24,7 @@ const Login = () => {
                     Ready to watch ? Enter your email to create or restart your membership.
         </Typography>
         <div className={classes.inputBlock}>
-          <NetflixInput />
+          <NetflixInput placeholder='Email address'/>
           <NetflixButton>GET STARTERD</NetflixButton>
         </div>
       </div>
@@ -40,20 +40,34 @@ const useStyles = makeStyles((theme) => ({
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     },
     logo: {
       position: "fixed",
       top: 0,
       left: 20,
       width: "150px",
-      cursor: "pointer"
+      cursor: "pointer",
     },
     sesion: {
       position: "fixed",
       zIndex: 15,
       right: 20,
       top: 20,
-    }
+    },
+    info: {
+      color: "#FFF",
+      zIndex: 15,
+      textAlign: "center",
+      "& h4": {
+        fontWeight: 800,
+      },
+      "& h5": {
+        fontWeight: 400,
+      },
+    },
   }));
  
 export default Login;
