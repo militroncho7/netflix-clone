@@ -28,3 +28,9 @@
 - Hemos posiconado el título de la película, la descripción y los botones.
 - Como la descripción viene de la API, la truncamos para asegurarnos que no sea demasiado larga. Para ello hemos declarado la función truncate().
 - Por último, añadimos un <div> vacío que oscurece la imagen haciendo un efecto de fusión con el resto de la app (gradiente posicionado de manera relativa).
+
+### Login Page
+- Añadimos el logo y lo situamos con una posición absoluta.
+- Colocamos una imagen como background.
+- Creamos un botón con styled-components para iniciar sesión. Lo hemos customizado a nuestro gusto (color, borde, etc...) y lo podemos cambiar como queramos pasándole props.
+- Styled-components para variar los estilos del input o del botón pero para su posicionamiento le damos una clase normal.

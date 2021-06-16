@@ -1,8 +1,8 @@
-import { Button, makeStyles } from '@material-ui/core';
+import { Button, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 import logo from '../images/netflix-logo.png';
 import HeroBanner from '../images/HeroBanner.jpg';
-import { NetflixButton } from '../styled/styledComponents';
+import { NetflixButton, NetflixInput } from '../styled/styledComponents';
 
 
 const Login = () => {
@@ -12,6 +12,22 @@ const Login = () => {
     <div className={classes.root}>
       <img src={logo} className={classes.logo} alt='logo' />
       <NetflixButton className={classes.sesion}>Iniciar sesión</NetflixButton>
+
+      <div className={classes.info}>
+        <Typography variant="h4" gutterBottom>
+                    Unlimited films, TV programmes and more.
+        </Typography>
+        <Typography variant="h5">
+                    Watch anywhere. Cancel at any time.
+        </Typography>
+        <Typography variant="h6">
+                    Ready to watch ? Enter your email to create or restart your membership.
+        </Typography>
+        <div className={classes.inputBlock}>
+          <NetflixInput />
+          <NetflixButton>GET STARTERD</NetflixButton>
+        </div>
+      </div>
     </div>);
 };
 

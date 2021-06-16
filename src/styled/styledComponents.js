@@ -1,4 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { InputBase } from '@material-ui/core';
+
+export const NetflixInput = styled(InputBase)`
+    
+`
 
 export const NetflixButton = styled.button`
     z-index: 15;
