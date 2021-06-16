@@ -14,3 +14,9 @@
 - Estilos en los componentes de Pages: Patrón para añadir la infraesctructura de todos los componentes página: Banner, Header, Plans y Rows.
 
 ### Header
+- Importamos el logo
+- Añadimos al AppBar clase condicional transparente. Se activa si la variable show es true. Esta variable se enciverte en true cuando hacemos un scroll vertical de 50px.
+- Para escuchar este scroll vertical, añadimos un eventListener al objeto window.
+- Este eventListener está activo una sola vez cada vez que refrescamos la página -> (useEffect con dependecia vacía).
+- Una vez montado el componente hay que limpiarlo para que no se quede colgado el eventListener.
+- Añadir rutas/enlaces al Logo y al Avatar.
