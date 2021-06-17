@@ -41,3 +41,6 @@
 - pasar props a los styled-components.
 - En el caso que el componente no sea binario (diferente tamaño de botones) lo solucionamos con una función y un switch.
 
+
+### Sign Up
+- Renderizado condicional con una variable SignIn. Si la variable es falsa accedemos al usuario.

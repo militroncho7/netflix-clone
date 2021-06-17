@@ -1,12 +1,14 @@
 import { Button, makeStyles, Typography } from '@material-ui/core';
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../images/netflix-logo.png';
 import HeroBanner from '../images/HeroBanner.jpg';
 import { NetflixButton, NetflixInput } from '../styled/styledComponents';
+import SignUp from '../Pages/SignUp';
 
 
 const Login = () => {
   const classes = useStyles();
+  const [ singIn, setSingIn ] = useState(false);
   
   return (
     <div className={classes.root}>
@@ -14,19 +16,28 @@ const Login = () => {
       <NetflixButton className={classes.sesion}>Iniciar sesión</NetflixButton>
 
       <div className={classes.info}>
-        <Typography variant="h4" gutterBottom>
+        {
+          !singIn ? (<SignUp />) : (
+          <>
+            <Typography variant="h4" gutterBottom>
                     Unlimited films, TV programmes and more.
-        </Typography>
-        <Typography variant="h5">
+            </Typography>
+            <Typography variant="h5">
                     Watch anywhere. Cancel at any time.
-        </Typography>
-        <Typography variant="h6">
+            </Typography>
+            <Typography variant="h6">
                     Ready to watch ? Enter your email to create or restart your membership.
-        </Typography>
-        <div className={classes.inputBlock}>
-          <NetflixInput placeholder='Email address'/>
-          <NetflixButton>GET STARTERD</NetflixButton>
-        </div>
+            </Typography>
+
+            <div className={classes.inputBlock}>
+              <NetflixInput placeholder='Email address'/>
+              <NetflixButton wide="small">GET STARTERD</NetflixButton>
+            </div>
+          </>
+          )
+        }
+        
+
       </div>
     </div>);
 };

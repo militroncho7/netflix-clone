@@ -14,6 +14,7 @@ const handleWidth = wide => {
     switch(wide){
         case "fullwidth": return "100%";
         case "medium" : return "260px";
+        case "small": return    "165px";
         default: return "160px"
     }
 };
@@ -29,5 +30,5 @@ export const NetflixButton = styled.button`
     border: none;
     outline: none;
     cursor: pointer;
-    width: ${({wide}) => handleWidth(wide)}
+    width: ${({wide}) => handleWidth(wide)};
 `
