@@ -44,3 +44,12 @@
 
 ### Sign Up
 - Renderizado condicional con una variable SignIn. Si la variable es falsa accedemos al usuario.
+
+### Registro & SingIn
+- Habilitado una cuenta en Firebase.
+- Inicializar auth.
+- Capturamos los datos del usuario dentro del form.
+- Registramos email y password con los métodos para crear usuarios.
+
+### Redux
+- Habilitamos el slice "userSlice" para manejar el usuario en los diferentes componentes.
