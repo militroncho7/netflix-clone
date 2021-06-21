@@ -53,3 +53,10 @@
 
 ### Redux
 - Habilitamos el slice "userSlice" para manejar el usuario en los diferentes componentes.
+
+### Persistencia
+- añadimos useEffect en App.js con el obj. auth.Escuhca cada vez que cambia el usuario en firebase.
+- Cada vez que cambia, vuelve a inyectar el usuario en la capa userSlice (Redux). De esta manera la app recuerda que ya estamos dentro aunque refresquemos la página.
+
+### Request
+- Construimos el componente Row. Para ello habilitamos todos los endpoints necesarios para acceder a la API de The Movie DB y extraer la información que queremos.
