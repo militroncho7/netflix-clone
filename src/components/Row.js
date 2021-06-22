@@ -1,7 +1,7 @@
 import { makeStyles, Typography } from '@material-ui/core';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import requests from '../Requests';
+// import requests from '../Requests';
 
 const Row = ({title, fetchUrl, isLargeRow}) => {
     const classes = useStyles();
@@ -10,7 +10,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
     const base_url = "https://image.tmdb.org/t/p/original/";
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData = async() => {
             const request = await axios.get(fetchUrl);
             setMovies(request.data.results);
             return request;   

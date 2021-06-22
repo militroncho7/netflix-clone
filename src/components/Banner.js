@@ -1,11 +1,29 @@
 import { Button, makeStyles, Typography } from '@material-ui/core';
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import HeroBanner from '../images/netflix.jpeg';
+import requests from '../Requests';
 
 const Banner = () => {
     const classes = useStyles();
+    const [ movie, setMovie ] = useState([]);
     //función para acortar la descripcion de la API y añadir "..." al final
     const truncate = (string, n) => string?.length > n ? `${string.substr(0, n-1)} ...` : string
+    
+    //Llamada a la API: para la imagen aleatoria del Banner
+    useEffect(() => {
+        const fetchData = async() => {
+            const request = await axios.get(requests.fetchNetflixOriginals);
+            //esto genera un array de peliculas en request.data.reslts
+            
+            //Generamos un numero random entre 0 y la longitud del array (un indice aleatorio)
+            const random = Math.floor(Math.random()*request.data.results.length - 1);
+            //Mostraremos en pantalla requets.data.results[random]
+            setMovie(requests.data.results[random])
+            return request;
+        }
+        return fetchData();
+    }, []);
 
     return (
         <div className={classes.root}>
