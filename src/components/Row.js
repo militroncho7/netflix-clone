@@ -12,9 +12,8 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
     useEffect(() => {
         const fetchData = async () => {
             const request = await axios.get(fetchUrl);
-            return console.log(request);
-            // setMovies(request.data.results);
-            // return request;   
+            setMovies(request.data.results);
+            return request;   
         };
         fetchData();
     },[fetchUrl]);
@@ -38,8 +37,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
                                 alt={movie?.name}
                             />
                         )
-                    )
-                    
+                    ) 
                 }
             </div>
         </div>
@@ -66,6 +64,12 @@ const useStyles = makeStyles((theme) => ({
         transition: "transform 450ms",
         "&:hover": {
             transform: "scale(1.1)",
+        },
+    },
+    posterLarge: {
+        maxHeight: "15rem",
+        "&:hover": {
+            transform: "scale(1.15)",
         },
     },
   }));
