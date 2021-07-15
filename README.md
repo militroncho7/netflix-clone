@@ -60,3 +60,9 @@
 
 ### Request
 - Construimos el componente Row. Para ello habilitamos todos los endpoints necesarios para acceder a la API de The Movie DB y extraer la información que queremos.
+
+### Imágenes
+- Request a la API (useEffect) mediante llamadas asíncronas (función fetchData)
+
+### PayPal
+- Medio de pago de la subscricón a través de Paypal. 

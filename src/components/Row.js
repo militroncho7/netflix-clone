@@ -27,7 +27,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
                         ((isLargeRow && movie.poster_path) ||
                             (!isLargeRow && movie.backdrop_path)) && (
                             <img
-                                className={`${classes.poster}} ${
+                                className={`${classes.poster} ${
                                     isLargeRow && classes.posterLarge
                                 }`}
                                 key={movie.id}
@@ -37,7 +37,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
                                 alt={movie?.name}
                             />
                         )
-                    ) 
+                    )
                 }
             </div>
         </div>

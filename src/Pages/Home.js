@@ -18,7 +18,7 @@ const Home = () => {
       {/* PRINCIPAL */}
       <Row
           title="NETFLIX ORIGINALS"
-          fetchUrl={requests.fetchTopRated}
+          fetchUrl={requests.fetchNetflixOriginals}
           isLargeRow
       />
 
