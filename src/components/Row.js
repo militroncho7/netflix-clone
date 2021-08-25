@@ -1,13 +1,14 @@
 import { makeStyles, Typography } from '@material-ui/core';
-import axios from 'axios';
+//import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import axios from '../axios';
 // import requests from '../Requests';
 
 const Row = ({title, fetchUrl, isLargeRow}) => {
     const classes = useStyles();
     const [ movies, setMovies ] = useState([]);
 
-    const base_url = "https://image.tmdb.org/t/p/original/";
+    const base_url = "https://image.tmdb.org/t/p/original";
 
     useEffect(() => {
         const fetchData = async() => {
@@ -31,7 +32,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
                                     isLargeRow && classes.posterLarge
                                 }`}
                                 key={movie.id}
-                                src={`${base_url} ${
+                                src={`${base_url}${
                                     isLargeRow ? movie.poster_path : movie?.backdrop_path
                                 }`}
                                 alt={movie?.name}
