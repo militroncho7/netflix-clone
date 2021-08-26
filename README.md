@@ -16,7 +16,7 @@ App realizada mediante la libería React:
 - Componentes condicionales
 - Totalmente Responsive:
 ---
-![Responsive](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1629959549/Netflix/Netflix-responsive_d8vziu.png)
+![Responsive](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1629960455/Netflix/netflix-responsive_b5cxkl.png)
 
 ## Inicialización del proyecto
 ` npx create-react-app netflix --template redux`
