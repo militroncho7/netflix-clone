@@ -3,7 +3,7 @@
 
 Replica de la app web de Netflix: Empresa de entretenimiento y un servicio por suscripción estadounidense que opera a nivel mundial y cuyo servicio principal es la distribución de contenidos audiovisuales a través de una plataforma en línea o servicio de video bajo demanda por streaming
 
-[Netflix Clone 🎥](https://ecstatic-jennings-eb4ec2.netlify.app).
+[Netflix Clone 🎥](https://netlfix-clone.netlify.app/).
 
 ## Sitio Web
 ---
