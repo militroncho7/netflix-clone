@@ -1,3 +1,23 @@
+# Netflix Clone 🍿
+![pagina principal netflix](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1629959549/Netflix/Netflix1_umlydy.png)
+
+Replica de la app web de Netflix: Empresa de entretenimiento y un servicio por suscripción estadounidense que opera a nivel mundial y cuyo servicio principal es la distribución de contenidos audiovisuales a través de una plataforma en línea o servicio de video bajo demanda por streaming
+
+[Netflix Clone 🎥](https://ecstatic-jennings-eb4ec2.netlify.app).
+
+## Sitio Web
+---
+App realizada mediante la libería React:
+
+- Creada con componentes funcionales
+- Manenjando los diferentes
+- Validación de formularios
+- Mensajes de error 
+- Componentes condicionales
+- Totalmente Responsive:
+---
+![Responsive](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1629959549/Netflix/Netflix-responsive_d8vziu.png)
+
 ## Inicialización del proyecto
 ` npx create-react-app netflix --template redux`
 
@@ -23,6 +43,8 @@
 - Una vez montado el componente hay que limpiarlo para que no se quede colgado el eventListener.
 - Añadir rutas/enlaces al Logo y al Avatar.
 
+![Sitio web](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1629959550/Netflix/Netflix2_uz5s9l.png)
+
 ### Banner
 - Importamos imagen como backgroundImage. Hemos acompañado esta imagen con estilos como object-fit, brackgorund-size y background-position para ajustar tal y como queremos.
 - Hemos posiconado el título de la película, la descripción y los botones.
@@ -40,6 +62,7 @@
 - Distribución de la página.
 - pasar props a los styled-components.
 - En el caso que el componente no sea binario (diferente tamaño de botones) lo solucionamos con una función y un switch.
+![Sitio web](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1629959548/Netflix/Netflix3_p6dgs3.png)
 
 
 ### Sign Up
@@ -66,3 +89,17 @@
 
 ### PayPal
 - Medio de pago de la subscricón a través de Paypal. 
+
+---
+### Cómo contribuir
+Toda aportación o comentario será recibido de buen gusto, ya que con ellos se podrá ayudar a crecer tanto a la app como a nosotros como desarrolladores.
+
+Cualquier mejora será incluida tras una previa revisión a través de un “pull requests”.
+
+Se requiere un código ordenado y comentado.
+
+
+### Autor
+---
+
+![VR-Logo](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1610528741/Logos%20VR/logo-vr_cmhmpa.jpg) || [Víctor Ruiz](https://www.linkedin.com/in/victormmorales/)
