@@ -29,6 +29,7 @@ const Paypal = () => {
             onError: err => console.log(err),
 
         }).render(paypal.current)
+        // eslint-disable-next-line
     }, []);
 
     return <div ref={paypal}>paypal</div>

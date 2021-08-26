@@ -1,4 +1,4 @@
-import { Button, makeStyles, Typography } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 import React, { useState } from 'react';
 import logo from '../images/netflix-logo.png';
 import HeroBanner from '../images/HeroBanner.jpg';
@@ -8,6 +8,7 @@ import SignUp from '../Pages/SignUp';
 
 const Login = () => {
   const classes = useStyles();
+  // eslint-disable-next-line
   const [ singIn, setSingIn ] = useState(false);
   
   return (

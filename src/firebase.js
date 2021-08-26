@@ -9,6 +9,7 @@ const firebaseConfig = {
     appId: "1:782248331515:web:f4c49cdffedf14c510c85e"
   };
 
+  // eslint-disable-next-line
   const firebaseApp = firebase.initializeApp(firebaseConfig);
 
   const auth = firebase.auth();

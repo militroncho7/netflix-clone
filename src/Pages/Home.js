@@ -1,4 +1,3 @@
-import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
@@ -7,7 +6,7 @@ import requests from '../Requests';
 
 
 const Home = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
   
   return (
     <div>
@@ -31,10 +30,5 @@ const Home = () => {
       <Row title="DOCUMENTARIES MOVIES" fetchUrl={requests.fetchDocumentaries}/>
     </div>);
 };
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-    },
-  }));
  
 export default Home;

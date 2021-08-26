@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core';
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { login, logout, selectUser } from './features/UserSlice';
+import { login, logout } from './features/UserSlice';
 import { auth } from './firebase';
 import Login from './Pages/Login';
 import Profile from './Pages/Profile';
@@ -10,7 +10,7 @@ import Paypal from './Pages/Paypal';
 import Home from './Pages/Home';
 
 function App() {
-  const user = useSelector(selectUser);
+  //const user = useSelector(selectUser);
   const classes = useStyles();
   const dispatch = useDispatch();
 
