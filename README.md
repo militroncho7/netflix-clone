@@ -1,7 +1,7 @@
 # Netflix Clone 🍿
 ![pagina principal netflix](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1629959549/Netflix/Netflix1_umlydy.png)
 
-Replica de la app web de Netflix: Empresa de entretenimiento y un servicio por suscripción estadounidense que opera a nivel mundial y cuyo servicio principal es la distribución de contenidos audiovisuales a través de una plataforma en línea o servicio de video bajo demanda por streaming
+Replica de la app web de Netflix: Empresa de entretenimiento y un servicio por suscripción estadounidense que opera a nivel mundial y cuyo servicio principal es la distribución de contenidos audiovisuales a través de una plataforma en línea o servicio de video bajo demanda por streaming.
 
 [Netflix Clone 🎥](https://netlfix-clone.netlify.app/).
 
